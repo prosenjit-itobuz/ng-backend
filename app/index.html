@@ -3,19 +3,25 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/ngAdmin.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+		
 
-	
+	<script src="libs/tinymce/tinymce.js"></script>
     <script src="libs/scripts/angular.js"></script>
     <script src="libs/scripts/angular-animate.js"></script>
     <script src="libs/scripts/angular-aria.js"></script>
     <script src="libs/scripts/angular-ui-router.js"></script>
     <script src="libs/scripts/ui-bootstrap.js"></script>
+    <script src="libs/scripts/tinymce.js"></script>
 
     <!-- Application -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers.js"></script>
+    <script src="scripts/config.js"></script>
     <script src="scripts/service.js"></script>
+
+    <!--  Modules -->
+    <script src="modules/posts/posts.controller.js"></script>
+    <script src="modules/post/post.controller.js"></script>
+    <script src="modules/postedit/postedit.controller.js"></script>
 	</head>
 	<body>
 		<div ui-view></div>
