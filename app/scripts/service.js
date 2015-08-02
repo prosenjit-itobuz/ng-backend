@@ -8,12 +8,31 @@ ngAdmin.service('dataservice', ['$http', '$q','appConfig', function($http, $q, a
 					dfd.resolve(data);
 				})
 				.error(function(data){
-					serviceMessage(appConfig.message);
+					
 					dfd.reject(data);					
 				});
 
 			return dfd.promise;
    };
+
+   function _postUpdate(id,data) {
+		 	var dfd = $q.defer();
+      var url = appConfig.apiEndPoint +'posts/'+id;
+			$http.put(url,data)
+				.success(function(data){
+					dfd.resolve(data);
+				})
+				.error(function(data){
+					
+					dfd.reject(data);					
+				});
+
+			return dfd.promise;
+   };
+
+
+ 
+
    function _posts(startfrom) {
 		 	var dfd = $q.defer();
 		 	var suffix = '?_start='+startfrom+'&_limit='+appConfig.postPerPage;
@@ -23,7 +42,6 @@ ngAdmin.service('dataservice', ['$http', '$q','appConfig', function($http, $q, a
 					dfd.resolve(data);
 				})
 				.error(function(data){
-					serviceMessage(appConfig.message);
 					dfd.reject(data);					
 				});
 
@@ -34,5 +52,6 @@ ngAdmin.service('dataservice', ['$http', '$q','appConfig', function($http, $q, a
 	return {
 		post:_post,
 		posts:_posts,
+		postUpdate : _postUpdate
 	};
 }])

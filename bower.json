@@ -16,7 +16,6 @@
     "angular-ui-router": "~0.2.15",
     "angular-bootstrap": "~0.13.1",
     "bootstrap": "~3.3.5",
-    "angular-ui-tinymce": "latest",
-    "angular-ui-codemirror": "~0.3.0"
+    "textAngular": "~1.4.3"
   }
 }

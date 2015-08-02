@@ -41,7 +41,12 @@ var src = {
 gulp.task('serve',['bower_styles','bower_scripts','tinymce','bower_fonts'], function() {
 
     browserSync.init({
-        server: "./"+config.app,
+        server: {
+            baseDir: "app",
+            routes: {
+                "/bower_components": "bower_components"
+            }
+        },
         port: 8080
     });
 

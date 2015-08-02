@@ -62,7 +62,7 @@ angular.module('ui.tinymce', [])
 }]); 
 
 
-var ngAdmin = angular.module('ngAdmin', ['ui.router','ui.bootstrap','ui.tinymce']);
+var ngAdmin = angular.module('ngAdmin', ['ui.router','ui.bootstrap', 'textAngular']);
 
 ngAdmin.config(function($stateProvider,$urlRouterProvider){
 	
