@@ -12,5 +12,9 @@
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "json-server": "^0.7.24"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0"
   }
 }
