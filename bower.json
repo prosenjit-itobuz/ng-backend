@@ -1,0 +1,19 @@
+{
+  "name": "angular-admin",
+  "version": "0.0.0",
+  "authors": [
+    "Prosenjit Manna <developer.prosenjit@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.10.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}
